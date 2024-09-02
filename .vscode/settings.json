@@ -1,0 +1,6 @@
+{
+"editor.largeFileOptimizations": true,
+"files.associations": {
+    "./data": "plaintext",
+}
+}
