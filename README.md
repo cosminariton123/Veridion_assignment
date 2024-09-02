@@ -47,4 +47,5 @@ Install dependencies with pip3.
 
     pip install -r requirements.txt
 
+In directory ./data/in unzip provided datasets.zip . The files "facebook_dataset.csv", "google_dataset.csv" and "website_dataset.csv" must be available in this directory.
 Simply run python3 main.py . Don't forget to take a look in main.py to see both v1 and v2.
