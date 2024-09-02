@@ -28,6 +28,11 @@ My primary objective was to deliver a rigorous dataset with consistency in mind.
 Such, no full_joins/outer_joins were used as they may introduce data duplication. If one may desire to change this behaviour,
 it can easily be done by changing the parameters of the pandas function in line 89 in main.py for main_v2.
 
+I have implemented 2 versions for solving this problem.
+
+-   The second one simply makes an inner join on "domain" using pandas. Found at main_v2. The result file is "main_v2_final.csv"
+-   The first one, makes a join on "domain", takes the remaining rows and joins them on "phone"(the file: main_v1_rest_that_couldnt_be_joined_on_domain_so_it_was_joined_on_phone.csv). Then it tries to join the "domain" joined table, just to fill in the empty columns, not to add new rows as this may create untraceble duplicates. The final file is "main_v1_final.csv"
+
 #### Choosing the column with the most relevant info
 
 ❗❗❗ Pandas merges datasets by concatenating columns. The merging logic of the columns is custom made and it is as follows:
